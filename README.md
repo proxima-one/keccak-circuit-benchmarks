@@ -7,7 +7,7 @@ This repository contains benchmarks of implementations keccak circuits using dif
 ## Implementations
 - [x] [Axiom using halo2-lib](https://github.com/axiom-crypto/halo2-lib/tree/community-edition/hashes/zkevm-keccak)
 - [x] [JumpCrypto using plonky2](https://github.com/JumpCrypto/plonky2-crypto/blob/main/src/hash/keccak256.rs)
-- [] Maru implementation wasn't publicly published yet
+- [ ] Maru implementation wasn't publicly published yet
 
 ## Running benchmarks
 rust with nightly
