@@ -10,7 +10,7 @@ This repository contains benchmarks of implementations keccak circuits using dif
 - [ ] Maru implementation wasn't publicly published yet
 
 ## Running benchmarks
-rust with nightly
+Dependencies: rust with nightly
 
 To run Axiom benchmark:
 
