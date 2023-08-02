@@ -213,7 +213,7 @@ fn packed_multi_keccak_prover() {
         .unwrap();
         set_var("KECCAK_ROWS", bench_params.rows_per_round.to_string());
         set_var("KECCAK_DEGREE", bench_params.degree.to_string());
-        for i in 372..=1000{
+        for i in 1..=1000{
             let output = test_packed_multi(i, bench_params.degree);
             writeln!(
                 fs_results,
