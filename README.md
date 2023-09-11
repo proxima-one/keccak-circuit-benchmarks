@@ -28,7 +28,7 @@ cd JumpCrypto
 cargo run --release
 ```
 
-To run JumpCrypto benchmark:
+To run Maru benchmark:
 
 ```
 cd Maru/keccak1
