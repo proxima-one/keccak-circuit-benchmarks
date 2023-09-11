@@ -27,3 +27,10 @@ To run JumpCrypto benchmark:
 cd JumpCrypto
 cargo run --release
 ```
+
+To run JumpCrypto benchmark:
+
+```
+cd Maru/keccak1
+RUSTFLAGS=-Ctarget-cpu=native cargo run —release
+```
