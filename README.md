@@ -32,5 +32,5 @@ To run Maru benchmark:
 
 ```
 cd Maru/keccak1
-RUSTFLAGS=-Ctarget-cpu=native cargo run —release
+RUSTFLAGS=-Ctarget-cpu=native cargo run --release
 ```
