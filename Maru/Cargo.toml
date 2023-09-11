@@ -1,0 +1,49 @@
+[workspace]
+members = ["keccak1"]
+[workspace.package]
+version = "0.1.0"
+authors = ["Zpoken"]
+description = "STARK for MARU"
+edition = "2021"
+
+[workspace.features]
+default = ["parallel"]
+parallel = ["plonky2/parallel", "maybe_rayon/parallel"]
+
+[workspace.dependencies]
+plonky2 = { git = "https://github.com/tikhono/plonky2", rev = "066c82b91e09272560d0e3154b971a73339611d5" }
+plonky2_util = { git = "https://github.com/tikhono/plonky2", rev = "066c82b91e09272560d0e3154b971a73339611d5" }
+plonky2_field = { git = "https://github.com/tikhono/plonky2", rev = "066c82b91e09272560d0e3154b971a73339611d5" }
+plonky2_u32 = { git = "https://github.com/tikhono/plonky2", rev = "066c82b91e09272560d0e3154b971a73339611d5" }
+plonky2_maybe_rayon = { git = "https://github.com/tikhono/plonky2", rev = "066c82b91e09272560d0e3154b971a73339611d5" }
+
+starky = { path = "./starky" }
+anyhow = "1.0.40"
+env_logger = "0.10.0"
+itertools = "0.10.0"
+log = "0.4.14"
+rand = "0.8.4"
+rand_chacha = "0.3.1"
+rayon = "1.5.1"
+serde_json = "1.0"
+num = { version = "0.4", features = ["rand"] }
+unroll = "0.1.5"
+static_assertions = "1.1.0"
+ed25519-compact = "2.0.4"
+hashbrown = { version = "0.13.2", default-features = false, features = ["ahash", "serde"] } # NOTE: When upgrading, see `ahash` dependency.
+arrayref = "0.3.6"
+tiny-keccak = "2.0.2"
+serde = { version = "1.0", default-features = false, features = ["alloc", "derive"] }
+keccak-hash = "0.10.0"
+ethereum-types = "0.14.0"
+
+jemallocator = "0.5.0"
+
+[profile.release]
+opt-level = 3
+
+[profile.bench]
+opt-level = 3
+
+[profile.test]
+opt-level = 1
