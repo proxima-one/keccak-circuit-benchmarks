@@ -193,6 +193,8 @@ fn test_packed_multi(i: i32, k: u32) -> (i32, usize, f64, f64, usize, f64, f64 )
 pub struct KeccakBenchConfig {
     degree: u32,
     rows_per_round: usize,
+    min_blocks: i32,
+    max_blocks: i32
 }
 /// Cmdline: RUST_LOG=info cargo test -- --nocapture packed_multi_keccak_prover
 #[test]
@@ -213,7 +215,7 @@ fn packed_multi_keccak_prover() {
         .unwrap();
         set_var("KECCAK_ROWS", bench_params.rows_per_round.to_string());
         set_var("KECCAK_DEGREE", bench_params.degree.to_string());
-        for i in 1..=1000{
+        for i in bench_params.min_blocks..=bench_params.max_blocks{
             let output = test_packed_multi(i, bench_params.degree);
             writeln!(
                 fs_results,

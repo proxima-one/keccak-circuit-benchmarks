@@ -1,18 +1,62 @@
 [
     {
-      "degree": 14,
-      "rows_per_round": 28
+        "degree": 11,
+        "rows_per_round": 25,
+        "min_blocks": 0,
+        "max_blocks": 1
+    },
+    {
+        "degree": 12,
+        "rows_per_round": 25,
+        "min_blocks": 2,
+        "max_blocks": 4
+    },
+    {
+        "degree": 13,
+        "rows_per_round": 25,
+        "min_blocks": 5,
+        "max_blocks": 11
+    },
+    {
+        "degree": 14,
+        "rows_per_round": 25,
+        "min_blocks": 12,
+        "max_blocks": 24
     },
     {
         "degree": 15,
-        "rows_per_round": 25
-    },
-    {
-        "degree": 15,
-        "rows_per_round": 9
+        "rows_per_round": 25,
+        "min_blocks": 25,
+        "max_blocks": 50
     },
     {
         "degree": 16,
-        "rows_per_round": 50
+        "rows_per_round": 25,
+        "min_blocks": 51,
+        "max_blocks": 102
+    },
+    {
+        "degree": 17,
+        "rows_per_round": 25,
+        "min_blocks": 103,
+        "max_blocks": 207
+    },
+    {
+        "degree": 18,
+        "rows_per_round": 25,
+        "min_blocks": 208,
+        "max_blocks": 417
+    },
+    {
+        "degree": 19,
+        "rows_per_round": 25,
+        "min_blocks": 418,
+        "max_blocks": 836
+    },
+    {
+        "degree": 20,
+        "rows_per_round": 25,
+        "min_blocks": 837,
+        "max_blocks": 1000
     }
 ]
