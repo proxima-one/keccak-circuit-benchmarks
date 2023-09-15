@@ -1,0 +1,29 @@
+[package]
+name = "keccak_ctl"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+plonky2.workspace = true
+plonky2_util.workspace = true
+plonky2_field.workspace = true
+maybe_rayon.workspace = true
+
+starky_ctl.workspace = true
+
+anyhow.workspace = true
+itertools.workspace = true
+log.workspace = true
+env_logger.workspace = true
+rand.workspace = true
+serde.workspace = true
+keccak-hash.workspace = true
+tiny-keccak.workspace = true
+hashbrown.workspace = true
+ethereum-types.workspace = true
+num.workspace = true
+
+[lib]
+doctest = false

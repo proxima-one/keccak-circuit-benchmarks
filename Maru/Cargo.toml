@@ -1,5 +1,5 @@
 [workspace]
-members = ["keccak1"]
+members = ["keccak_ctl", "starky_ctl"]
 [workspace.package]
 version = "0.1.0"
 authors = ["Zpoken"]
@@ -11,13 +11,13 @@ default = ["parallel"]
 parallel = ["plonky2/parallel", "maybe_rayon/parallel"]
 
 [workspace.dependencies]
-plonky2 = { git = "https://github.com/tikhono/plonky2", rev = "066c82b91e09272560d0e3154b971a73339611d5" }
-plonky2_util = { git = "https://github.com/tikhono/plonky2", rev = "066c82b91e09272560d0e3154b971a73339611d5" }
-plonky2_field = { git = "https://github.com/tikhono/plonky2", rev = "066c82b91e09272560d0e3154b971a73339611d5" }
-plonky2_u32 = { git = "https://github.com/tikhono/plonky2", rev = "066c82b91e09272560d0e3154b971a73339611d5" }
-plonky2_maybe_rayon = { git = "https://github.com/tikhono/plonky2", rev = "066c82b91e09272560d0e3154b971a73339611d5" }
 
-starky = { path = "./starky" }
+plonky2 = { git = "https://github.com/EkaterynaKuznetsova/plonky2", rev = "8a50270f3f849c2844c8018f5036c2bd51515b97"}
+plonky2_util = { git = "https://github.com/EkaterynaKuznetsova/plonky2", rev = "8a50270f3f849c2844c8018f5036c2bd51515b97"}
+plonky2_field = { git = "https://github.com/EkaterynaKuznetsova/plonky2", rev = "8a50270f3f849c2844c8018f5036c2bd51515b97"}
+plonky2_u32 = { git = "https://github.com/EkaterynaKuznetsova/plonky2", rev = "8a50270f3f849c2844c8018f5036c2bd51515b97"}
+maybe_rayon = { git = "https://github.com/EkaterynaKuznetsova/plonky2", rev = "8a50270f3f849c2844c8018f5036c2bd51515b97"}
+starky_ctl = { path = "./starky_ctl" }
 anyhow = "1.0.40"
 env_logger = "0.10.0"
 itertools = "0.10.0"
