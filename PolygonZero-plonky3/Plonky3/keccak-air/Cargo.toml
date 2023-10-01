@@ -1,0 +1,34 @@
+[package]
+name = "p3-keccak-air"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+p3-uni-stark = { path = "../uni-stark" }
+p3-air = { path = "../air" }
+p3-field = { path = "../field" }
+p3-challenger = { path = "../challenger" }
+p3-commit = { path = "../commit" }
+p3-dft = { path = "../dft" }
+p3-matrix = { path = "../matrix" }
+p3-maybe-rayon = { path = "../maybe-rayon", default-features = false }
+p3-util = { path = "../util" }
+
+[dev-dependencies]
+p3-fri = { path = "../fri" }
+p3-ldt = { path = "../ldt" }
+p3-mds = { path = "../mds" }
+p3-merkle-tree = { path = "../merkle-tree" }
+p3-baby-bear = { path = "../baby-bear" }
+p3-goldilocks = { path = "../goldilocks" }
+p3-keccak = { path = "../keccak" }
+p3-mersenne-31 = { path = "../mersenne-31" }
+p3-poseidon = { path = "../poseidon" }
+p3-symmetric = { path = "../symmetric" }
+rand = "0.8.5"
+criterion = "0.5.1"
+
+[[bench]]
+name = "keccak_air"
+harness = false
